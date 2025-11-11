@@ -1,0 +1,106 @@
+/* Import a clean, modern font */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); */ */
+
+/* Basic resets */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    /* Use the new font */
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(to right top, #e0f3ff, #f3e5f5);
+    background-color: #f0f2f5; /* Fallback for old browsers */
+    /* Center the quiz card on the page */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    margin: 0;
+}
+
+/* This is the main card */
+.quiz-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 500px;
+    max-width: 95%; /* For mobile */
+    overflow: hidden; /* Keeps corners rounded */
+}
+
+/* Your original form element */
+#parent {
+    padding: 2rem;
+}
+
+/* The question text */
+#questions {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+/* The div holding all the options */
+#options {
+    margin-bottom: 2rem;
+}
+
+/* Style for each option label */
+#options label {
+    display: block; /* Puts each option on a new line */
+    font-size: 1.1rem; /* 18px */
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Style the radio button itself */
+#options input[type="radio"] {
+    margin-right: 0.5rem;
+    /* This makes the radio button 'pop' a bit */
+    transform: scale(1.1); 
+}
+
+/* Change background when user hovers over an option */
+#options label:hover {
+    background-color: #f9f9f9;
+}
+
+/* A modern, full-width button */
+#submitBtn {
+    font-family: 'Poppins', sans-serif; /* Make sure button uses the font */
+    background-color: #007bff; /* A nice blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    
+    display: block; /* Makes it take full width */
+    width: 100%;
+    
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Darken button on hover */
+#submitBtn:hover {
+    background-color: #0056b3;
+}
+
+/* This will style your final score text */
+#parent h2 {
+    text-align: center;
+}
+#parent h3 {
+    text-align: center;
+    font-weight: 400;
+}
